@@ -10,6 +10,7 @@
 
 # production
 /build
+README.MD
 
 # misc
 .DS_Store
