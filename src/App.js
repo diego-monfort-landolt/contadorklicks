@@ -20,6 +20,7 @@ function App() {
     <div className="App">
      <div className='logo-cont'>
       <img className='header-logo' src={Logo} alt='Logo of my page'/>
+      
      </div>
 
      <div className='header'>
