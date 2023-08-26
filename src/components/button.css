@@ -1,0 +1,27 @@
+button {
+  width: 150px;
+  height: 80px;
+  font-size: 25px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  color: white;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+
+  box-shadow: 2px 2px 12px #fff;
+  text-align: center;
+  flex-wrap: wrap;
+  }
+  button:hover {
+    background-color: blue;
+    box-shadow: 2px 2px 15px #fff;
+  }
+  .boton-clic {
+   
+    background-color:#002ead;
+  }
+  .boton-reiniciar {
+    background-color:#002ead;
+  }

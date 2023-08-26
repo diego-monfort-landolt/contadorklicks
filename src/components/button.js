@@ -1,4 +1,5 @@
 import React from 'react';
+import './button.css';
 
 function Boton({ texto, esBotonDeClic, manejarClic }) {
     return(

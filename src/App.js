@@ -2,15 +2,18 @@
 import './App.css';
 import Logo from './img/node.png';
 import Boton from './components/button';
+import Contador from './components/contador';
+import { useState } from 'react';
 
 function App() {
 
+  const [numClics, setNumClics] = useState(0);
 
  const manejarClic = () => {
-  alert('Hola Diego')
+  setNumClics(numClics+1);
  }
  const reiniciarContador = () => {
-  alert('Hola Andrea')
+  setNumClics(0)
  }
 
   return (
@@ -20,8 +23,10 @@ function App() {
      </div>
 
      <div className='header'>
-     <Boton texto="Reiniciar" esBotonDeClic={true} manejarClic={manejarClic}/>
-     <Boton texto="Click" esBotonDeClic={false} manejarClic={reiniciarContador}/>
+     <Contador numClics={numClics}/>
+     <Boton texto="Click" esBotonDeClic={true} manejarClic={manejarClic}/>
+     <Boton texto="Reiniciar" esBotonDeClic={false} manejarClic={reiniciarContador}/>
+     
      </div>
     </div>
   );
